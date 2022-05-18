@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/profiles.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1d67b6;">
+            <div class="container-fluid" style="padding-left:30px">
+                <img class="rounded-circle" src="{{url_for('static', filename='Icon-Sign-Language-blue.png')}}"  alt="logo.img" style="width:60px; height:60px; ">
+                <i><b><a class="navbar-brand" href="#" style="padding-left:10px;">ISL-Recognition</a></b></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ISL-Symbols" class="nav-link active" href="#">ISL-Symbols</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Contributors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class='text-center'style="padding-top:0px; padding-top:100px; padding-bottom:25px; background-color:#1d67b6;">
+        <h3 style="color: rgb(249, 246, 249);"><i><b>OUR TEAM IS OUR STRENGTH</b></i></h3>
+    </div>
+    
+
+    <div class="bg-dark text-center footer-spacing" style="background-image: linear-gradient(to right, #f6f8f3, #d1d7c4);">
+        <h3 style="color: rgb(39, 99, 183);"><b>Meet Our Team</b></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont top-img" >
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12" style="background: #2380e3;;padding-top: 5px;padding-bottom:5px;">
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Vineet-Jaktiya.jpg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Dr. Vinit Jakhetia</h5>
+                                <h6 style="color:#fff">Assistant Professor, CSE, IIT Jammu</h6>
+                                <span style="color:#fff">Mentor</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/vinit-jakhetiya-ph-d-b2450a80/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin-icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.iitjammu.ac.in/faculty/~vinitjakhetiya"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="website-icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 proj-cont top-img">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12" style="background: #2380e3;padding-top: 5px;padding-bottom:5px;">
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Subhasis.jpg')}}" alt="subhais.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Dr. Subhasis Bhattacharjee</h5>
+                                <h6 style="color:#fff">Associate Professor, CSE, IIT Jammu</h6>
+                                <span style="color:#fff">Instructor</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/bhattacharjeesubhasis/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin-icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://iitjammu.ac.in/computer_science_engineering/faculty-list/~subhasisbhattacharjee"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="website.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="padding-top: 20px;">
+                <div class="divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont" >
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Abhay.jpeg')}}" alt="abhay.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Abhay Yadav</h5>
+                                <h6 style="color:#fff">23'EE Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/abhay-yadav-754899135/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com/abhayishere"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont" >
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont" >
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Anant.jpeg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Anant Kumar</h5>
+                                <h6 style="color:#fff">23'CE Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/anant0059/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com/anant0059"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont" >
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont" >
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Anshul.jpeg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Anshul Sharma</h5>
+                                <h6 style="color:#fff">23'CSE Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/anshul-sharma-058993218/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com/anshul0074"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/user/rainman_74"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont" >
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont">
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Balwant.jpg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Balwant Yadav</h5>
+                                <h6 style="color:#fff">23'CH Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/balwant-yadav-947a10191"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont">
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Chandan.jpg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Chandan Kumar</h5>
+                                <h6 style="color:#fff">23'CSE Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/chandan-kumar-b789bb205/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 proj-cont" >
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-cont">
+                            <div style="border-bottom:20px; padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='profiles-pic/Sachin.jpg')}}" alt="vineet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 style="color:#fff">Sachin Naik</h5>
+                                <h6 style="color:#fff">23'CSE Student, IIT Jammu</h6>
+                                <span style="color:#fff">Contributors</span>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sachin-naik-2a2702195/"><img src="{{url_for('static', filename='/logo-icon/icons8-linkedin-30.png')}}" alt="linkdin.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://github.com/nsachin08"><img src="{{url_for('static', filename='/logo-icon/icons8-github-30.png')}}" alt="git.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.instagram.com/?hl=en"><img src="{{url_for('static', filename='/logo-icon/icons8-instagram-30.png')}}" alt="instra.icon" style="width:20px; height:20px;"></a>
+                                    <a href="https://www.reddit.com/"><img src="{{url_for('static', filename='/logo-icon/icons8-reddit-30.png')}}" alt="reddit.icon" style="width:20px; height:20px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+    <footer id="footer">
+        <div class="center">
+            <img class="footer-img" src="{{url_for('static', filename='img-1.png')}}"/>
+            <img class="footer-img" src="{{url_for('static', filename='img-2.png')}}"/>
+            <img class="footer-img" src="{{url_for('static', filename='img-3.png')}}"/>
+            <img class="footer-img" src="{{url_for('static', filename='img-4.png')}}"/>
+            <img class="footer-img" src="{{url_for('static', filename='img-5.png')}}"/>    
+        </div>
+    </footer>
+    
+  </body>
+</html>
+
+

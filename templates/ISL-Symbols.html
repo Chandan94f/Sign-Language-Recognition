@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/ISL-Symbols.css">
+
+    <title>ISL-Symbols</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1d67b6;">
+            <div class="container-fluid" style="padding-left:30px">
+                <img class="rounded-circle" src="{{url_for('static', filename='Icon-Sign-Language-blue.png')}}"  alt="logo.img" style="width:60px; height:60px;  ">
+                <i><b><a class="navbar-brand" href="#" style="padding-left:10px;">ISL-Recognition</a></b></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" href="#">ISL-Symbols</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="profiles" class="nav-link active">Contributors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="bg-dark text-center footer-spacing" style="background-image: linear-gradient(to right, #f6f8f3, #d1d7c4);padding-top:100px;">
+      <div class="container">
+        <div class="folder">
+            <div class="folder-hv">
+                <a href="https://drive.google.com/drive/folders/1pLklcbqWJ1rWacFJBKDY6Fp0EOF8_lM0?usp=sharing" target="_blank">
+                    <img src="{{url_for('static', filename='/symbols/folder-icon.png')}}" alt="folder-icon.img" style="width:100px;height:80px">
+                </a>
+                <h5 class="txt-folder">Full dataset</h5>
+            </div>
+        </div>
+          <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/A.jpeg')}}" alt="A.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">A</h5>
+                                <a href="https://drive.google.com/drive/folders/1V3F69Je_j38dWHvHnDuRwd7gS592jUIk?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/award.jpeg')}}" alt="Award.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Award</h5>
+                                <a href="https://drive.google.com/drive/folders/1y0d3p-HEqSlpA2ZvrraDtsu95_1XJhJ8?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="Award.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/bowl.jpeg')}}" alt="bowl.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Bowl</h5>
+                                <a href="https://drive.google.com/drive/folders/1tBTLrT62qkR5JMLTtDn2LCUyQu-fPwoM?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/bucket.jpeg')}}" alt="bucket.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Bucket</h5>
+                                <a href="https://drive.google.com/drive/folders/1Q6xKazEnnhpwoBW9EM5uPNjcQU-bBywS?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/burger.jpeg')}}" alt="burger.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Burger</h5>
+                                <a href="https://drive.google.com/drive/folders/14uIBVqo_zUZw25ZiY4Zju2hJ_dIXarAJ?usp=sharing" alt="A.img" class="icon-img"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/busy.jpeg')}}" alt="busy.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Busy</h5>
+                                <a href="https://drive.google.com/drive/folders/1gMaLUk3K6_XXcNx2d99YQl6WR2q_OL7a?usp=sharing" alt="A.img" class="icon-img"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Doctor.jpeg')}}" alt="Doctor.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Doctor</h5>
+                                <a href="https://drive.google.com/drive/folders/1ZjFNANKVtZnlhO5WyhDGrR8axRnEyeFd?usp=sharing" alt="A.img" class="icon-img"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/ear.jpeg')}}" alt="ear.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Ear</h5>
+                                <a href="https://drive.google.com/drive/folders/1l8kucQ6WHEWWDCkM7PKhRLxXPmt83Oxr?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/eat.jpeg')}}" alt="eat.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Eat</h5>
+                                <a href="https://drive.google.com/drive/folders/1ryd28-Vi4svu_og16F_sxS1_F7RlhJ_T?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Eight.jpeg')}}" alt="eight.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Eight</h5>
+                                <a href="https://drive.google.com/drive/folders/1enMVglRi3e0kv2TNYhwRx4kwmNTtSlVj?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/fight.jpeg')}}" alt="Fight.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Fight</h5>
+                                <a href="https://drive.google.com/drive/folders/1Ywzgb-w2LYTuaMHyHT0bAOCuSeqd9Il5?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Five.jpeg')}}" alt="five.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Five</h5>
+                                <a href="https://drive.google.com/drive/folders/1-Ur6pxsGHLf9uZWZgA2Q17fLvYmp3Mr6?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Four.jpeg')}}" alt="Four.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Four</h5>
+                                <a href="https://drive.google.com/drive/folders/1AzBDKYMG9N1ujSHznxeQ59-ZZ04-NTUl?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/friday.jpeg')}}" alt="friday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Friday</h5>
+                                <a href="https://drive.google.com/drive/folders/1b-DNgwJlEz4edUmmUWcUpTAu1dLb3wVx?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/friend.jpeg')}}" alt="friend.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Friend</h5>
+                                <a href="https://drive.google.com/drive/folders/1AzBDKYMG9N1ujSHznxeQ59-ZZ04-NTUl?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/ghost.jpeg')}}" alt="ghost.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Ghost</h5>
+                                <a href="https://drive.google.com/drive/folders/1cwoa_7_iyfW1S-F8OaC_zHKYy-pZ1tK9?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/gift.jpeg')}}" alt="gift.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Gift</h5>
+                                <a href="https://drive.google.com/drive/folders/1QOjfJvi5l5HETibR8spcnBQtKJgWdq7d?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/good.jpeg')}}" alt="good.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Good</h5>
+                                <a href="https://drive.google.com/drive/folders/1eLdFZmB1MThWe8nusEZOD6YWY1iyVZDV?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/gun.jpeg')}}" alt="gun.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Gun</h5>
+                                <a href="https://drive.google.com/drive/folders/1XfkuogqDxpjV0zo0U0wWCxbUHhNzyynz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/habit.jpeg')}}" alt="habit.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Habit</h5>
+                                <a href="https://drive.google.com/drive/folders/10gV0SvqOKyAhmCiYtVqxBvISJ_n5AcM6?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/hands.jpeg')}}" alt="hands.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Hands</h5>
+                                <a href="https://drive.google.com/drive/folders/1rOebqeEo0jGfMU8u6G-3fEl_FKZeo1o6?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/hear.jpeg')}}" alt="hear.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Hear</h5>
+                                <a href="https://drive.google.com/drive/folders/14Od-lrC55bbGMq7372GjrvVWMXPAFWnz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/help.jpeg')}}" alt="help.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Help</h5>
+                                <a href="https://drive.google.com/drive/folders/1Vc3RPsEhA4JvWl20-5uN_Z6z7D4oVA5D?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/i.jpeg')}}" alt="i.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">I</h5>
+                                <a href="https://drive.google.com/drive/folders/1S-iaIp8wAbUWPd4D4W9FYUUtycbBG3vg?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/internet.jpeg')}}" alt="internet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Internet</h5>
+                                <a href="https://drive.google.com/drive/folders/1KR4EUq2DXmEpdVx36ptUlYVij4mT3eUH?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/iron.jpeg')}}" alt="iron.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Iron</h5>
+                                <a href="https://drive.google.com/drive/folders/1LOiAqbKVmyprekLN5QhVkS4_MkQfCAfJ?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/it.jpeg')}}" alt="it.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">It</h5>
+                                <a href="https://drive.google.com/drive/folders/1bZFSSj-EN8ocXhhudUhApgH0nva7hD1g?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/itch.jpeg')}}" alt="itch.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Itch</h5>
+                                <a href="https://drive.google.com/drive/folders/1_afmpnaHoNrZRitnDAxs_lWVVdwPX7V2?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/key.jpeg')}}" alt="key.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Key</h5>
+                                <a href="https://drive.google.com/drive/folders/14umU-N58_ZFT_iDqo6X1XNKf-jTLwKRL?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/like.jpeg')}}" alt="like.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Like</h5>
+                                <a href="https://drive.google.com/drive/folders/18rGl6-YFIZ9DKoewoZNjywRdwiVNlSgy?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/limit.jpeg')}}" alt="limit.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Limit</h5>
+                                <a href="https://drive.google.com/drive/folders/1cYgj40E7_5oVokAav6TpoHTjWm4Ofi6s?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/little.jpeg')}}" alt="little.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Little</h5>
+                                <a href="https://drive.google.com/drive/folders/1h3zTTLWSFT9ItTwTyMTHy9pLNp9gbRMf?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/lock.jpeg')}}" alt="lock.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Lock</h5>
+                                <a href="https://drive.google.com/drive/folders/1G-7PkGqHVtJgNG80C8aWaP3WR7gz_3jv?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/mail.jpeg')}}" alt="mail.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Mail</h5>
+                                <a href="https://drive.google.com/drive/folders/1kOmn6kYYgV5DGvc0VycqF79T-BwOMBf8?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/maximum.jpeg')}}" alt="maximum.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Maximum</h5>
+                                <a href="https://drive.google.com/drive/folders/1_1XiybNLZBry3QSlfMeouIbw30sgKWxz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/me.jpeg')}}" alt="me.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Me</h5>
+                                <a href="https://drive.google.com/drive/folders/18nlocn7A9h4sIeoQToQJr0_h-igJ-qBj?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/meet.jpeg')}}" alt="meet.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Meet</h5>
+                                <a href="https://drive.google.com/drive/folders/1_SNsfQs4HbTcitr__o1AM4nbZ323q1M3?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/monday.jpeg')}}" alt="monday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Monday</h5>
+                                <a href="https://drive.google.com/drive/folders/1vOEJyyyZBDiAh_Wwc_WIlAC6vvogOJy0?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/money.jpeg')}}" alt="money.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Money</h5>
+                                <a href="https://drive.google.com/drive/folders/1qX6K2kp9vVygvLg8Vupyatc2sZPh72Cb?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Nine.jpeg')}}" alt="nine.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Nine</h5>
+                                <a href="https://drive.google.com/drive/folders/1vaWOQk51Iyq9yQJLNsWU4hsW_aDk0xhv?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/One.jpeg')}}" alt="one.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">One</h5>
+                                <a href="https://drive.google.com/drive/folders/1wufFOs_n4pX0m_UR0-jtj6_VwY0rlkXS?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/opposite.jpeg')}}" alt="opposite.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Opposite</h5>
+                                <a href="https://drive.google.com/drive/folders/1MvrJfavRDsrO3t3cTwNFDx1jAXxRO3G5?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/pain.jpeg')}}" alt="pain.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Pain</h5>
+                                <a href="https://drive.google.com/drive/folders/1Gv3WYAu2CrurKYIb6S8p56xSDUoAFtC2?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/promise.jpeg')}}" alt="promise.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Promise</h5>
+                                <a href="https://drive.google.com/drive/folders/1YJig4nlkSHKNIACkO8gToZv-IMvkJ1zA?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/respect.jpeg')}}" alt="respect.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Respect</h5>
+                                <a href="https://drive.google.com/drive/folders/1-M7d4x9zSHJFi7_BiSLqQgSb4XUnIpfO?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/same.jpeg')}}" alt="same.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Same</h5>
+                                <a href="https://drive.google.com/drive/folders/1-M7d4x9zSHJFi7_BiSLqQgSb4XUnIpfO?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/saturday.jpeg')}}" alt="saturday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Saturday</h5>
+                                <a href="https://drive.google.com/drive/folders/1VJT0L1vm4twylwU1kyq3H73Bc6Iaba_i?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Seven.jpeg')}}" alt="seven.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Seven</h5>
+                                <a href="https://drive.google.com/drive/folders/1gtOKROKxWQ8z9n51M9J5pnCEUmKk85sJ?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/show.jpeg')}}" alt="show.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Show</h5>
+                                <a href="https://drive.google.com/drive/folders/1VJECV3hN_JqfiBa4VhcJ1E1VgZx_5FnM?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Six.jpeg')}}" alt="six.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Six</h5>
+                                <a href="https://drive.google.com/drive/folders/1ZNgPPYnTuAg8yS2l1JW79iFft0SisdCz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/skin.jpeg')}}" alt="skin.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Skin</h5>
+                                <a href="https://drive.google.com/drive/folders/1ZNgPPYnTuAg8yS2l1JW79iFft0SisdCz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/snake.jpeg')}}" alt="snake.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Snake</h5>
+                                <a href="https://drive.google.com/drive/folders/10n6cilqvYaXSO2ydXTyEP90WEbCBJbdo?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/study.jpeg')}}" alt="study.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Study</h5>
+                                <a href="https://drive.google.com/drive/folders/1nQYRImux0cI78W1i_WR78f62NdwFPjLP?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/sun.jpeg')}}" alt="sun.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Sun</h5>
+                                <a href="https://drive.google.com/drive/folders/1l4FHStBDgi4azk4QjLO62yPe-K0LNJXR?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/sunday.jpeg')}}" alt="sunday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Sunday</h5>
+                                <a href="https://drive.google.com/drive/folders/1qfXeHFQA6jajn6vYPX7L0_ohSFihSbFl?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/teeth.jpeg')}}" alt="teeth.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Teeth</h5>
+                                <a href="https://drive.google.com/drive/folders/15E70SeqJ9FgF3ptSj8OEj71w4JZt0B2j?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/there.jpeg')}}" alt="there.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">There</h5>
+                                <a href="https://drive.google.com/drive/folders/1M0HJLPTEez1D8BwNjreRrZ13c6QEBNKN?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Three.jpeg')}}" alt="three.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Three</h5>
+                                <a href="https://drive.google.com/drive/folders/1M0HJLPTEez1D8BwNjreRrZ13c6QEBNKN?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/thursday.jpeg')}}" alt="thursday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Thursday</h5>
+                                <a href="" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/tongue.jpeg')}}" alt="tongue.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Tongue</h5>
+                                <a href="https://drive.google.com/drive/folders/1OmUncPYJR45GivxkXju2LcgZVRzvR9Uo?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/tuesday.jpeg')}}" alt="tuesday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Tuesday</h5>
+                                <a href="https://drive.google.com/drive/folders/1OvVoo0qLkawgyaodKK1mQuHaH7BjaHK4?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Two.jpeg')}}" alt="two.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Two</h5>
+                                <a href="https://drive.google.com/drive/folders/1nUHaBrgr1YzUqVbPJmV7MMx4pSUeMpYV?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/under.jpeg')}}" alt="under.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Undar</h5>
+                                <a href="https://drive.google.com/drive/folders/1geE3TyXNp4SQ5q6KXJTXwpa6r2pk1usb?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/unit.jpeg')}}" alt="unit.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Unit</h5>
+                                <a href="https://drive.google.com/drive/folders/1eS5k3O7mzHj5DBQlnxbPHOjhlWLAIvKR?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/up.jpeg')}}" alt="up.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Up</h5>
+                                <a href="https://drive.google.com/drive/folders/1eS5k3O7mzHj5DBQlnxbPHOjhlWLAIvKR?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/wait.jpeg')}}" alt="wait.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Wait</h5>
+                                <a href="https://drive.google.com/drive/folders/1uSjlzdOjV8MDsg2IQeEi0YwdozjEJ4ix?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/walk.jpeg')}}" alt="walk.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Walk</h5>
+                                <a href="https://drive.google.com/drive/folders/1zTLW6BES0QmuSmzvXDrlGCzyV6UlS5KS?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/want.jpeg')}}" alt="want.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Want</h5>
+                                <a href="https://drive.google.com/drive/folders/1gF23qviCGDfNiXrCiZmGfFDj3dmz08Uc?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/way.jpeg')}}" alt="way.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Way</h5>
+                                <a href="https://drive.google.com/drive/folders/1m5gr0sUFY0e2kHAduDqPiVWwUxNSWfhN?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/we.jpeg')}}" alt="we.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">We</h5>
+                                <a href="https://drive.google.com/drive/folders/1D1ozzzyMgyQexS-sGEIFE1xP2FYaQ-0I?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/weak.jpeg')}}" alt="weak.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Weak</h5>
+                                <a href="https://drive.google.com/drive/folders/1fHQc-5iYE4LwHM-Nf_aFyNLG4c9jcwbY?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/wednesday.jpeg')}}" alt="wednesday.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Wednesday</h5>
+                                <a href="https://drive.google.com/drive/folders/1fYXHyqUQce_cQ-aZ-hKhiBN1IjEmJPjS?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/welcome.jpeg')}}" alt="welcome.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Welcome</h5>
+                                <a href="https://drive.google.com/drive/folders/12sB_86C4J-2332BqIZCI1-sb7Ygrv9m3?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/why.jpeg')}}" alt="why.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Why</h5>
+                                <a href="https://drive.google.com/drive/folders/1fMmwoRe8dgM3F31nuyHgPnHWpx0uoJzM?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/wind.jpeg')}}" alt="wind.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Wind</h5>
+                                <a href="https://drive.google.com/drive/folders/1CUG3Gx5ynmXSDDQivZoiFGpr-rcYQAXT?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/women.jpeg')}}" alt="women.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Women</h5>
+                                <a href="https://drive.google.com/drive/folders/1H7slI7u00b67CNvYHw1JphiMi_-KFLjI?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/wood.jpeg')}}" alt="wood.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Wood</h5>
+                                <a href="https://drive.google.com/drive/folders/1H7slI7u00b67CNvYHw1JphiMi_-KFLjI?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/work.jpeg')}}" alt="work.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Work</h5>
+                                <a href="https://drive.google.com/drive/folders/1rPVbSO5bLsp8pnqPA3SQcy3d-btIZOdg?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/wound.jpeg')}}" alt="wound.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Wound</h5>
+                                <a href="https://drive.google.com/drive/folders/1WD9LWiAQrL0In7aVpvAwHX-R3uCvrCFb?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/you.jpeg')}}" alt="you.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">You</h5>
+                                <a href="https://drive.google.com/drive/folders/1WD9LWiAQrL0In7aVpvAwHX-R3uCvrCFb?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/young.jpeg')}}" alt="young.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Young</h5>
+                                <a href="https://drive.google.com/drive/folders/1FECD69GMcUwiSd5ra1GDvDnBDvzC7cgz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/your.jpeg')}}" alt="your.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Your</h5>
+                                <a href="https://drive.google.com/drive/folders/1FECD69GMcUwiSd5ra1GDvDnBDvzC7cgz?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col" style="padding:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+                        <div class="col-lg12 col-md-12 col-sm-12 bg-hv" style="background: #6b727a;padding-top: 5px;padding-bottom:5px;" id="shadow">
+                            <div style="padding:10px;">
+                                <div class="col-lg-12 text-center">
+                                    <img src="{{url_for('static', filename='symbols/Zero.jpeg')}}" alt="Zero.pic" style="width:150px;height:150px;border:5px solid rgba(255,255,255,0.73);" class="border_color">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="border-top:2px solid #fff;">
+                                <h5 class="sign-name">Zero</h5>
+                                <a href="https://drive.google.com/drive/folders/18-AKOZ07J4jS-27fZopgARk7lE4QraCn?usp=sharing" target="_blank"><img src="{{url_for('static', filename='/logo-icon/icons8-stumbleupon-30.png')}}" alt="A.img" class="icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </div>
+      
+
+    <footer id="footer">
+        <div class="center">
+            <img class="footer-img" src="{{url_for('static', filename='img-1.png')}}" />
+            <img class="footer-img" src="{{url_for('static', filename='img-2.png')}}">
+            <img class="footer-img" src="{{url_for('static', filename='img-3.png')}}">
+            <img class="footer-img" src="{{url_for('static', filename='img-4.png')}}">
+            <img class="footer-img" src="{{url_for('static', filename='img-5.png')}}">    
+        </div>
+    </footer>
+
+  </body>
+</html>

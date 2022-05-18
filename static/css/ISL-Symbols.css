@@ -1,0 +1,64 @@
+.profile_pic{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:180px;
+    height:180px;
+}
+.col:hover{
+    background-color: #438bd8;
+    border-radius: 2%;
+    
+}
+.bg-hv{
+    border-radius: 2%;
+}
+#shadow{
+    box-shadow: 5px 10px #9f9a9a;
+}
+
+.sign-name{
+    color:#fff;
+}
+
+.icon-img{
+    width:30px;
+    height:30px;
+}
+.folder{
+    margin-left: 45%;
+}
+.folder-hv{
+    height:130px;
+    width:130px;
+    padding:10px;
+}
+
+.folder-hv:hover{
+    background-color: #797e82;
+    border-radius: 5%;
+    color: rgb(248, 243, 243);
+}
+
+.txt-folder{
+    color: rgb(47, 67, 83);
+}
+.txt-folder:hover{
+    color: rgb(248, 243, 243);
+}
+
+.footer-spacing{
+	padding-bottom: 50px;
+}
+#footer{
+	padding-left: 5%;
+	padding-right:5%;
+	background-color: #1d67b6;
+}
+.footer-img{
+	padding-left:4%;
+    padding-right:4%;
+    padding-top:3px;
+    padding-bottom:12px;
+	height:100px;
+	width:19%;
+}
